@@ -74,42 +74,27 @@ button{
 }
 .sip{
     animation-name: paragraphSip;
-    animation-duration: 40s;
+    animation-duration: 20s;
     animation-timing-function: linear;
+    animation-iteration-count: 3;
 }
 @keyframes paragraphSip{
-    10%{
-        transform: scale(0.4);
-        color: white;
-    }
-    15%{
-        transform: scale(0.8);
-    }
-    19%{
-        transform: scale(1);
-        color: #FFD700;
-    }
-    21%{
-        color: orange;
-    }
-    30%{
-        transform: translateX(300px);
-        color: green;
-    }
-    31%{
-        transform: translateX(0);
-        color: white;
-    }
     40%{
         transform: scale(0.4);
         color: white;
     }
     50%{
-        transform: scale(0.75);
+        transform: scale(0.8);
+    }
+    55%{
+        transform: scale(1);
+        color: #FFD700;
+    }
+    59%{
         color: orange;
     }
-    60%{
-        transform: translateX(200px);
+    100%{
+        transform: translateX(300px);
         color: green;
     }
 }
