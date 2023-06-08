@@ -1,26 +1,21 @@
 body{
     animation-name: bodycol;
-    animation-duration: 40S;
+    animation-duration: 60S;
     background-color: 	#FFD700;
+    animation-timing-function: linear;
 }
 @keyframes bodycol {
-    10%{
+    25%{
         background-color: 	#FFD700;
-    }
-    20%{
-        background-color: 	#FFD700;
-    }
-    30%{
-        background-color: #FFD700;
-    }
-    40%{
-        background-color: rgb(90, 166, 90);
     }
     50%{
         background-color: 	rgb(90, 166, 90);
     }
-    60%{
+    75%{
         background-color: 	#7E481C;
+    }
+    100%{
+        background-color: rgb(191, 123, 27);
     }
 }
   
@@ -72,11 +67,14 @@ button{
 .paragraph p{
     font-size: 22px;
 }
-.sip{
+.sip {
     animation-name: paragraphSip;
-    animation-duration: 20s;
+    animation-duration: 15s;
     animation-timing-function: linear;
-    animation-iteration-count: 3;
+    animation-iteration-count: 4;
+}
+.sip h1{
+    font-size: 60px;
 }
 @keyframes paragraphSip{
     40%{
