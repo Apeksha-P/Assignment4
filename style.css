@@ -11,7 +11,7 @@ body{
 }
 .links ul{
     position: relative;
-    left: 220px;
+    left: 200px;
     top: 60px;
     list-style-type: none;
     display: inline;
@@ -20,6 +20,19 @@ body{
     padding-left: 70px;
     color: black;
     float: left;
+    font-weight: bold;
+    font-size: large;
+}
+button{
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    height: 40px;
+    position: relative;
+    top: 50px;
+    left: 260px;
     font-weight: bold;
     font-size: large;
 }
