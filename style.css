@@ -1,6 +1,7 @@
 body{
+    overflow: hidden;
     animation-name: bodycol;
-    animation-duration: 60S;
+    animation-duration: 28S;
     background-color: 	#FFD700;
     animation-timing-function: linear;
 }
@@ -9,13 +10,13 @@ body{
         background-color: 	#FFD700;
     }
     50%{
-        background-color: 	rgb(90, 166, 90);
+        background-color: 	rgb(64, 110, 64);
     }
     75%{
         background-color: 	#7E481C;
     }
     100%{
-        background-color: rgb(191, 123, 27);
+        background-color: 	#FF8C00;
     }
 }
   
@@ -69,7 +70,7 @@ button{
 }
 .sip {
     animation-name: paragraphSip;
-    animation-duration: 15s;
+    animation-duration: 7s;
     animation-timing-function: linear;
     animation-iteration-count: 4;
 }
@@ -92,7 +93,79 @@ button{
         color: orange;
     }
     100%{
-        transform: translateX(300px);
+        transform: translateX(450px);
         color: green;
+    }
+}
+.images img{
+    position: absolute;
+    top: 250px;
+    left: 55%;
+    transform: scale(0);
+    width: 150px;
+}
+.apple{
+    z-index: 3;
+    animation-name: appleimg;
+    animation-duration: 6s;
+    transition: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes appleimg {
+    10%{
+        transform: scale(0.5) rotate(20deg);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: translateX(400px);
+    }
+}
+.orange{
+    z-index: 2;
+    animation-name: orangeimg;
+    animation-duration: 13s;
+    animation-timing-function: linear;
+    transition: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes orangeimg {
+    10%{
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(0.8) rotate(20deg);
+    }
+    98%{
+        transform: translateX(400px);
+    }
+    100%{
+        transform: translateX(230px);
+    }
+}
+.tropical{
+    z-index: 1;
+    animation-name: tropicalimg;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    transition: 3s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+}
+@keyframes tropicalimg {
+    10%{
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(0.8) rotate(20deg);
+    }
+    98%{
+        transform: translateX(400px);
+    }
+    100%{
+        transform: translateX(60px);
     }
 }
